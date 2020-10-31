@@ -1,2 +1,2 @@
 # Link página web
-[https://www.kzzazzk.github.io](kzzazzk.github.io)
+[http//:www.kzzazzk.github.io](kzzazzk.github.io)
