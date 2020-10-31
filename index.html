@@ -1,16 +1,45 @@
-index.html
 <html>
-<body>
-<h2 style{ font-family: Verdana, Geneva, sans-serif} >Mc banan?</h2>
-<img src="https://meme.museum/_images/83ed9d6f3a2682dd55b180a6fa612f3a/117%20-%20animal%3Amonkey%20banana%20category%3Ablack_border%20dialogue%20mcbanan%20mcbanana%20mcdonalds%20meta%3Atext%20monky.jpg" alt="Manke" width="500" height="333">
-  <style>
-  body{
-  text-align:center;
-  background-image: url('https://i.pinimg.com/originals/43/11/ff/4311ff9d91ab67cf24450e8bfa02bd82.gif');
-   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-}
-</style>
-</body>
+  <head> <title>Monkey vibes</title>
+      <link rel="icon" type="image/png" href="macaco.jpg"/>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script> 
+      getStars(){
+        $.get("https://api.github.com/repos/kzzazzk/kzzazzk.github.io", function(data, status){
+            
+            document.getElementById("stars").innerHTML = data['stargazers_count'];
+            console.log(data.stargazers_count);
+        });
+    }
+  </script>
+  </head>
+  <body class="center" style="background-image: url(vaporwave.gif); background-size: cover;"
+  > 
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <h2 class="red-text" style="font-family: monospace ;">Le chimp at makkies</h2>
+      <img src="Le mank.jpg" alt="Manke" width="500" height="333">
+      <br></br>
+      <a onclick="alert('Mankey')" class= "waves-effect waves-light btn-large red">Click for a surprise</a>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div class="row">
+        <div id="contact" class="col s12 center">
+          <h5 class="header col s12 light white-text text-darken-2">Estrellas del github: <span id="stars"></span><i class="material-icons">grade</i></h5><i class="loader fas fa-sync fa-spin fa-4x"></i>
+        </div>
+      </div>
+      
+  </body>
 </html>
