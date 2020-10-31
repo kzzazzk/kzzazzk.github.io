@@ -1,45 +1,43 @@
 <html>
-  <!DOCTYPE html>
-  <html style="scroll-behavior:smooth" lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>EUROVISION</title>
-    <!-- Google Material Icons-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link rel="icon" type="image/png" href="eurovision.ico"/>
-    <link href="style.css" rel="stylesheet"/>
-    <!-- JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js" language="javascript"></script>
-    <!--Get stars from github repository-->
-    <script>
-      function getStars(){
-      $.get("https://api.github.com/repos/Saliim17/Saliim17.github.io", function(data, status){
-        document.getElementById("stars").innerHTML = data['stargazers_count'];
-        console.log(data.stargazers_count);
-      });
-      }
-     </script>
-  </head>
-</head>
+<!DOCTYPE html>
+<html style="scroll-behavior:smooth" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Monkey vibes</title>
+  <!-- Google Material Icons-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="icon" type="image/png" href="macaco.jpg"/>
+  <link href="style.css" rel="stylesheet"/>
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js" language="javascript"></script>
+  <!--Get stars from github repository-->
+  <script>
+    function getStars(){
+    $.get("https://api.github.com/repos/Saliim17/Saliim17.github.io", function(data, status){
+      document.getElementById("stars").innerHTML = data['stargazers_count'];
+      console.log(data.stargazers_count);
+    });
+    }
+   </script>
 </head>
   <body onload="getStars()" class="center" style="background-image: url(vaporwave.gif); background-size: cover;"> 
       <!--JavaScript at end of body for optimized loading-->
