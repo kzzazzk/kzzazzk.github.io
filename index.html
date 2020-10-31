@@ -11,15 +11,6 @@
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <script> 
-      getStars(){
-        $.get("https://api.github.com/repos/kzzazzk/kzzazzk.github.io", function(data, status){
-            
-            document.getElementById("stars").innerHTML = data['stargazers_count'];
-            console.log(data.stargazers_count);
-        });
-    }
-  </script>
   </head>
   <body class="center" style="background-image: url(vaporwave.gif); background-size: cover;"
   > 
@@ -38,6 +29,15 @@
           <h5 class="header col s12 light white-text text-darken-2">Estrellas del github: <span id="stars"></span><i class="material-icons">grade</i></h5><i class="loader fas fa-sync fa-spin fa-4x"></i>
         </div>
       </div>
+      <script> 
+        getStars(){
+          $.get("https://api.github.com/repos/kzzazzk/kzzazzk.github.io", function(data, status){
+              
+              document.getElementById("stars").innerHTML = data['stargazers_count'];
+              console.log(data.stargazers_count);
+          });
+      }
+    </script>
       <br></br>
       <br></br>
   </body>
